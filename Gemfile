@@ -6,4 +6,5 @@ source "https://rubygems.org" do
   gem 'thin'
   gem 'pry'
   gem 'aws-sdk-s3'
+  gem 'aws-sdk-rdsdataservice'
 end

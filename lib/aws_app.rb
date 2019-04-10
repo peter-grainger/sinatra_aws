@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 require 'sinatra/base'
-require "sinatra/reloader"
+require 'sinatra/reloader'
 
 require_relative 'upload_file'
 
@@ -17,7 +19,11 @@ class AWSApp < Sinatra::Application
   end
 
   post '/file-upload' do
-    file = params["file"]
+    file = params['file']
     UploadFile.new.call(file)
+  end
+
+  get '/list-images' do
+    GetImageList.new.call
   end
 end

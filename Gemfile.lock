@@ -11,6 +11,9 @@ GEM
     aws-sdk-kms (1.16.0)
       aws-sdk-core (~> 3, >= 3.48.2)
       aws-sigv4 (~> 1.1)
+    aws-sdk-rdsdataservice (1.4.0)
+      aws-sdk-core (~> 3, >= 3.48.2)
+      aws-sigv4 (~> 1.1)
     aws-sdk-s3 (1.35.0)
       aws-sdk-core (~> 3, >= 3.48.2)
       aws-sdk-kms (~> 1)
@@ -53,6 +56,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk-rdsdataservice!
   aws-sdk-s3!
   pry!
   sinatra!
