@@ -3,7 +3,7 @@
 require 'aws-sdk-rdsdataservice'
 
 class GetImageList
-  def call(_file)
+  def call
     client = Aws::RDS::RDSDataService.new(region: ENV.fetch('AWS_REGION'))
     client.execute_sql(
       aws_secret_store_arn: ENV.fetch('SECRET_STORE'),

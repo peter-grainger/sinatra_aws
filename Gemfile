@@ -7,4 +7,5 @@ source "https://rubygems.org" do
   gem 'pry'
   gem 'aws-sdk-s3'
   gem 'aws-sdk-rdsdataservice'
+  gem 'aws-sdk-dynamodb'
 end
